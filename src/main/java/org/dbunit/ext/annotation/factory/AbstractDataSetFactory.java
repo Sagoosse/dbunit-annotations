@@ -27,7 +27,7 @@ public abstract class AbstractDataSetFactory<A extends Annotation> implements ID
 	public final IDataSet create(A annotation, Method method, Integer parameterPosition, Object target) throws Exception {
 		IDataSet result = null ;
 		IDataSet[] dataSets = createDataSets(annotation, method, parameterPosition, target);
-		if (dataSets.length == 0) {
+		if (dataSets.length > 0) {
 			result = new DefaultDataSet() ;
 		}
 		else if (dataSets.length == 1) {
