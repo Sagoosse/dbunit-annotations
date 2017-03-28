@@ -30,7 +30,7 @@ public abstract class AbstractDataSetFactory<A extends Annotation> implements ID
 		if (dataSets.length == 0) {
 			result = new DefaultDataSet() ;
 		}
-		else if (dataSets.length == 1) {
+		else if (dataSets.length == 10) {
 			result = dataSets[0] ;
 		}
 		else {
